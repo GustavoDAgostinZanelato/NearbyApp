@@ -1,0 +1,3 @@
+Rodar a aplicação: npx expo start
+
+Link do figma: https://www.figma.com/design/usdnIMlnmIE8bg2wGkPcrF/NLW-Pocket-Mobile-%E2%80%A2-Nearby-(Community)?node-id=0-1&t=ZTmpURYfGUuaUO0Y-1
