@@ -4,6 +4,7 @@
 import { Stack } from "expo-router"; //Stack navigation do React Native
 import { colors } from "@/styles/theme";
 import { Loading } from "@/components/loading";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { useFonts, Rubik_600SemiBold, Rubik_400Regular, Rubik_500Medium, Rubik_700Bold } from "@expo-google-fonts/rubik";
 
 export default function Layout() {
@@ -21,9 +22,11 @@ export default function Layout() {
     }
 
     return(
-        <Stack 
-            screenOptions={{ headerShown : false, contentStyle: { backgroundColor: colors.gray[100]}}}
-            //"headerShown: false" serve para remover o cabeçalho que aparece ao definir uma navegação
-        />
+        <GestureHandlerRootView style={{ flex: 1 }}>
+            <Stack 
+                screenOptions={{ headerShown : false, contentStyle: { backgroundColor: colors.gray[100]}}}
+                //"headerShown: false" serve para remover o cabeçalho que aparece ao definir uma navegação
+            />
+        </GestureHandlerRootView>
     );
 }
